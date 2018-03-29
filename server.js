@@ -71,7 +71,7 @@ app.use(mainRoutes);
 app.use(userRoutes);
 
 
-http.listen(3000, (err) => {
+http.listen(config.port, (err) => {
   if (err) console.log(err);
-  console.log(`Running on port ${3000}`);
+  console.log(`Running on port ${config.port}`);
 });
